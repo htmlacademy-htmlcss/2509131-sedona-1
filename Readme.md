@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Машкина](https://up.htmlacademy.ru/htmlcss-individual/1/user/2509131).
-* Наставник: `Неизвестно`.
+* Наставник: `Анастасия Гущина`(https://htmlacademy.ru/profile/vanastasiya).
 
 ---
 
