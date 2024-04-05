@@ -18,8 +18,9 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: white;
-  color: black;
+  background-color:  #f2f2f2;
+  color: #000000;
+  margin: 0;
 }
 
 .button {
@@ -28,8 +29,8 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: #ffffff;
+  background-color: #000000;
   text-decoration: none;
 }
 
@@ -38,19 +39,24 @@ body {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #f2f2f2;
   text-decoration: none;
+
+}
+.navigation-list {
+  list-style: none;
 }
 
-a.want-here {
+want-here {
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 .advantages-list {
   text-align: center;
+  list-style: none;
 }
 
 .advantages-main-title {
@@ -75,8 +81,31 @@ a.want-here {
   text-transform: uppercase;
 }
 
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.advantages-item-medium {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-dark {
+  background-color: #82b3d3;
+  color: #ffffff;
+}
+
+.advantages-item-dark .advantages-title {
+  color: #ffffff;
+}
+
+.advantages-description {
+  color: #333333;
+}
+
 .services-list {
   text-align: center;
+  list-style: none;
 }
 
 .services-main-title {
@@ -101,6 +130,14 @@ a.want-here {
   text-transform: uppercase;
 }
 
+.services-item-medium {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-item-light {
+  background-color: #ffffff;
+}
+
 .hotel-search {
   text-align: center;
 }
@@ -117,6 +154,11 @@ a.want-here {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.hotel-search-button {
+  background-color: #756157;
+  color: #ffffff;
 }
 
 .footer-subscribe {
@@ -143,17 +185,22 @@ input[type=email] {
   text-align: center;
 }
 
-.footer-subscribe {
+.footer-subscribe-main-page {
   background-image: url(../images/Subscribe.jpg);
-  color: #ffffff;
-  background-color: #000000;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  color: #ffffff;
+  background-color: #4c6792;
+}
+
+.footer-contacts-social-list {
+  list-style: none;
 }
 
 .footer-contacts a {
   color: black;
-  background-color: white;
+  background-color: #f2f2f2;
 }
 
 a.footer-phone {
@@ -162,7 +209,6 @@ a.footer-phone {
   text-align: center;
   text-decoration: none;
   color: black;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   font-style: normal;
-
 }
