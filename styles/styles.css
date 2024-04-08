@@ -296,7 +296,7 @@ input[type=email] {
 .background-container {
   background-image: url("../images/background-catalog.jpg");
   background-position: center;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #696563;
   color: #ffffff;
