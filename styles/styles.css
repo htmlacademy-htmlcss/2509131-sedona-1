@@ -34,14 +34,18 @@ body {
 }
 
 .container {
+  min-height: 100vh;
   width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   box-shadow: 0 0 15 0 rgba(0, 0, 0, 0.2);
   flex-grow: 1;
   background-color: #ffffff;
+}
+
+.main-index {
+  flex-grow: 1;
 }
 
 .button {
@@ -79,6 +83,9 @@ body {
 
 .button-transparent {
   background-color: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .list {
@@ -342,7 +349,7 @@ input[type=email] {
 
 .footer-contacts a {
   color: black;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .footer-phone {
@@ -350,8 +357,6 @@ input[type=email] {
   line-height: 40px;
   text-align: center;
   text-decoration: none;
-  color: black;
-  background-color: #f2f2f2;
   font-style: normal;
 }
 
@@ -393,14 +398,16 @@ input[type=email] {
   color: #ffffff;
 }
 
-.control-label {
+.price-input {
   font-size: 18px;
   line-height: 23px;
+  font-weight: 700;
 }
 
 .price-label {
   font-size: 18px;
   line-height: 24px;
+  color: #000000;
 }
 
 .sorting-results {
@@ -463,6 +470,18 @@ input[type=email] {
 
 .pagination {
   list-style: none;
+  display: flex;
+  width: 1060px;
+  gap: 8px;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  background-color: #82b3d3;
+  border-radius: 4px;
+  text-align: center;
+
 }
 
 .pagination-link {
@@ -478,4 +497,4 @@ input[type=email] {
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
-}
+  }
