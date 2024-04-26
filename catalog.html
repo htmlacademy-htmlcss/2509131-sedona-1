@@ -124,44 +124,52 @@
       </div>
       </section>
       <section class="sorting-results">
-        <h2 class="sorting-results-title">Найдено гостиниц:</h2>
-          <span class="sorting-results-count">38</span>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-        <ul class="list show-cards-list">
-          <li class="show-cards-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-          </li>
-          <li class="show-cards-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Показать одну карточку</span>
-            </a>
-           </li>
-           <li class="show-cards-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Показать список</span>
-            </a>
-           </li>
-        </ul>
+        <div class="sorting-results-container">
+          <h2 class="sorting-results-title">Найдено гостиниц:</h2>
+            <span class="sorting-results-count">38</span>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <ul class="list show-cards-list">
+            <li class="show-cards-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </li>
+            <li class="show-cards-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Показать одну карточку</span>
+              </a>
+            </li>
+            <li class="show-cards-item">
+              <a class="button" href="#">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="list hotels-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#" tabindex="-1">
               <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" alt="Здездное небо в ущелье." width="300" height="212">
               <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
-            <span class="living-type">Гостиница</span>
-            <span class="price">От 4000 ₽</span>
-            <a class="button button-dark-catalog" href="#">подробнее</a>
-            <button class="button button-favourites" type="button">в избранное</button>
-            <p class="product-four-stars">
-              <span class="visually-hidden">4 звезды</span>
-            </p>
-            <span class="hotel-rating">Рейтинг: 8,5</span>
+            <div class="hotel-card-row">
+              <span class="living-type">Гостиница</span>
+              <span class="price">От 4000 ₽</span>
+            </div>
+            <div class="hotel-card-row">
+              <a class="button button-dark-catalog" href="#">подробнее</a>
+              <button class="button button-favourites" type="button">в избранное</button>
+            </div>
+            <div class="hotel-card-row">
+              <p class="product-four-stars">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+              <span class="hotel-rating">Рейтинг: 8,5</span>
+            </div>
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#" tabindex="-1">
@@ -234,7 +242,7 @@
         <h2 class="footer-subscribe-title">Подпишитесь на рассылку</h2>
         <p class="footer-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="footer-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" type="email" name="footer-subscribe-email" placeholder="Ваш e-mail" required>
+          <input class="field field-inner" type="email" name="footer-subscribe-email" placeholder="Ваш e-mail" required>
           <button class="button footer-subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -242,17 +250,17 @@
         <h2 class="visually-hidden">Контакты</h2>
           <ul class="list footer-contacts-social-list">
             <li class="footer-contacts-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
+              <a class="footer-contacts-social-button" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="footer-contacts-social-item">
-              <a class="button" href="https://t.me/htmlacademy ">
+              <a class="footer-contacts-social-button" href="https://t.me/htmlacademy ">
                 <span class="visually-hidden">Телеграмм</span>
               </a>
             </li>
             <li class="footer-contacts-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-contacts-social-button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
