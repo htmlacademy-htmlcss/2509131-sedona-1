@@ -345,6 +345,7 @@ input[type=email] {
   list-style: none;
   margin: 0 auto;
   width: 141.99px;
+  display: inline;
 }
 
 .footer-contacts a {
