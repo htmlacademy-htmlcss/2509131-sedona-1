@@ -177,6 +177,7 @@ body {
   background-color: #7db54f;
   color: #ffffff;
   border-radius: 50%;
+  padding: 3px;
 }
 
 .want-here {
@@ -223,6 +224,7 @@ body {
   margin: 0 auto;
   margin-bottom: 25px;
   width: 620px;
+  margin-top: 69px;
 }
 
 .advantages-main-title-description {
@@ -470,6 +472,7 @@ background-color: #f2f2f2;
   text-decoration: none;
   font-style: normal;
   color: #000000;
+  display: block;
 }
 
 /*CATALOG*/
@@ -520,14 +523,43 @@ background-color: #f2f2f2;
   margin-bottom: 36px;
 }
 
+.breadcrumbs-link {
+  display: block;
+}
+
 .home-button {
   width: 13px;
   height: 15px;
   margin-right: 28px;
+  display: block;
 }
 
 .hotels-filter {
   display: flex;
+}
+
+.hotels-filter-group {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 73px;
+}
+
+.hotels-filter-group-infrastructure {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+hotels-filter-group-living {
+  min-width: 151px;
+  margin-right: 140px;
+}
+
+hotels-filter-group-price {
+  min-width: 288px;
+}
+
+.hotels-filter-list {
+  display: block;
 }
 
 .hotels-filter-title {
@@ -537,11 +569,12 @@ background-color: #f2f2f2;
   color: #ffffff;
   margin: 0;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .hotels-filter-item {
-  margin: 16px;
-}
+  margin-bottom: 16px;
+ }
 
 .hotels-filter-item:last-child {
   margin-bottom: 0;
@@ -551,12 +584,15 @@ background-color: #f2f2f2;
   font-size: 18px;
   line-height: 23px;
   font-weight: 700;
+  min-width: 143px;
+
 }
 
 .price-label {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  min-width: 143px;
 }
 
 .sorting-results {
@@ -572,7 +608,17 @@ background-color: #f2f2f2;
   margin-bottom: 46.5px;
 }
 
-.sorting-results-title,
+.sorting-results-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  display: block;
+}
+
+
 .sorting-results-count {
   font-size: 30px;
   line-height: 36px;
@@ -580,6 +626,27 @@ background-color: #f2f2f2;
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  display: block;
+  margin-right: 200px;
+}
+
+.show-cards-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.show-cards-button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.select-control {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  min-width: 292px;
+  padding: 14px 131px 14px 20px;
 }
 
 .hotels-list {
@@ -658,6 +725,7 @@ background-color: #f2f2f2;
   padding: 0;
   margin-left: 70px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .pagination-link {
@@ -679,3 +747,11 @@ background-color: #f2f2f2;
   color: #000000;
   background-color: #F2F2F2;
   }
+
+.dots {
+  display: block;
+  min-width: 60px;
+  min-height: 60px;
+  align-items: center;
+  padding: 16px 22px;
+}

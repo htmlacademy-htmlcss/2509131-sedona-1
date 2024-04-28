@@ -59,7 +59,7 @@
       <section class="catalog-filter">
         <h2 class="visually-hidden">Фильтры для подбора гостиницы</h2>
         <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="hotels-filter-group">
+          <fieldset class="hotels-filter-group hotels-filter-group-infrastructure">
             <legend class="hotels-filter-title">Инфраструктура:</legend>
             <ul class="list hotels-filter-list">
               <li class="hotels-filter-item">
@@ -81,7 +81,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="hotels-filter-group">
+          <fieldset class="hotels-filter-group hotels-filter-group-living">
             <legend class="hotels-filter-title">Тип Жилья:</legend>
             <ul class="list hotels-filter-list">
               <li class="hotels-filter-item">
@@ -101,7 +101,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="hotels-filter-group">
+          <fieldset class="hotels-filter-group hotels-filter-group-price">
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
               <label class="price-label">
                 <input class="price-input" type="number" name="min-price" placeholder="от" value="0">
@@ -134,17 +134,17 @@
           </select>
           <ul class="list show-cards-list">
             <li class="show-cards-item">
-              <a class="button" href="#">
+              <a class="show-cards-button" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
             </li>
             <li class="show-cards-item">
-              <a class="button" href="#">
+              <a class="show-cards-button" href="#">
                 <span class="visually-hidden">Показать одну карточку</span>
               </a>
             </li>
             <li class="show-cards-item">
-              <a class="button" href="#">
+              <a class="show-cards-button" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
             </li>
@@ -246,7 +246,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item pagination-dots">
-            <span>...</span>
+            <span class="dots">...</span>
 
           </li>
           <li class="pagination-item">
