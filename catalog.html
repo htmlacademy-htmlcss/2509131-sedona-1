@@ -104,10 +104,10 @@
           <fieldset class="hotels-filter-group hotels-filter-group-price">
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
               <label class="price-label">
-                <input class="price-input" type="number" name="min-price" placeholder="от" value="0">
+                <input class="price-input price-input-min" type="number" name="min-price" placeholder="от" value="0">
               </label>
               <label class="price-label">
-                <input class="price-input" type="number" name="max-price" placeholder="до" value="9000">
+                <input class="price-input price-input-max" type="number" name="max-price" placeholder="до" value="9000">
               </label>
               <button class="toggle-min" type="button">
                 <span class="visually-hidden">Изменить мин цену</span>
@@ -116,7 +116,7 @@
                 <span class="visually-hidden">Изменить макс цену</span>
               </button>
           </fieldset>
-          <div>
+          <div class="buttons-container">
             <button class="button button-light-catalog submit-button" type="submit">Применить</button>
             <button class="button button-transparent" type="reset">Сбросить</button>
           </div>

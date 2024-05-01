@@ -4,7 +4,7 @@
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
-  }
+}
 
 @font-face {
   font-family: "PT Sans";
@@ -12,7 +12,7 @@
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
-  }
+}
 
 html {
   height: 100%;
@@ -72,7 +72,6 @@ body {
   border: none;
   border-radius: 4px;
   margin: 0;
-  padding: 0;
   align-items: center;
 }
 
@@ -119,6 +118,7 @@ body {
 .submit-button {
   width: 190px;
   padding: 8px 50px;
+  margin-bottom: 32px;
 }
 
 .list {
@@ -403,7 +403,7 @@ input[type=email] {
   text-align: center;
   margin: 0 auto;
   padding: 96px 258px 104px;
-  }
+}
 
 .footer-subscribe-main-page {
   background-image: url("../images/subscribe.jpg");
@@ -412,11 +412,11 @@ input[type=email] {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
- }
+}
 
  .footer-subscribe-form {
   display: flex;
- }
+}
 
 .footer-subscribe-button {
   background-color: #82B3D3;
@@ -542,6 +542,7 @@ background-color: #f2f2f2;
   padding: 0;
   margin: 0;
   padding-bottom: 73px;
+  border: none;
 }
 
 .hotels-filter-group-infrastructure {
@@ -549,13 +550,16 @@ background-color: #f2f2f2;
   margin-right: 70px;
 }
 
-hotels-filter-group-living {
+.hotels-filter-group-living {
   min-width: 151px;
   margin-right: 140px;
 }
 
-hotels-filter-group-price {
+.hotels-filter-group-price {
   min-width: 288px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 70px;
 }
 
 .hotels-filter-list {
@@ -574,7 +578,7 @@ hotels-filter-group-price {
 
 .hotels-filter-item {
   margin-bottom: 16px;
- }
+}
 
 .hotels-filter-item:last-child {
   margin-bottom: 0;
@@ -584,8 +588,18 @@ hotels-filter-group-price {
   font-size: 18px;
   line-height: 23px;
   font-weight: 700;
-  min-width: 143px;
+  width: 143px;
+  margin: 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
 
+.price-input-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.price-input-max {
+  border-radius: 0 4px 4px 0;
 }
 
 .price-label {
@@ -593,6 +607,13 @@ hotels-filter-group-price {
   line-height: 24px;
   color: #000000;
   min-width: 143px;
+  min-height: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons-container {
+  margin-top: 56px;
 }
 
 .sorting-results {
@@ -605,7 +626,6 @@ hotels-filter-group-price {
   width: 1060px;
   margin: 0 auto;
   margin-top: 56.5px;
-  margin-bottom: 46.5px;
 }
 
 .sorting-results-title {
@@ -697,6 +717,8 @@ hotels-filter-group-price {
   background-color: #82b3d3;
   width: 140px;
   height: 36px;
+  margin: 0;
+  padding: 0;
 }
 
 .button-favourites-selected {
@@ -745,8 +767,8 @@ hotels-filter-group-price {
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
-  }
+  background-color: #f2f2f2;
+}
 
 .dots {
   display: block;
