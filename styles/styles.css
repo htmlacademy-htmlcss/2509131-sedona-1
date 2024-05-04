@@ -665,19 +665,9 @@ background-color: #f2f2f2;
 }
 
 .hotels-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
-}
-
-.hotel-card-row {
-  display: flex;
-  margin-bottom: 16px;
-  justify-content: space-between;
-}
-
-.hotel-card-row:last-child {
-  margin-bottom: 0;
 }
 
 .price {
@@ -687,11 +677,14 @@ background-color: #f2f2f2;
 .hotel-card-link {
   text-decoration: none;
   color: inherit;
+  grid-column: 2 span;
 }
 
 .hotel-card {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
   background-color: #ffffff;
-  width: 340px;
   padding: 20px;
   border: 1px solid #e6e6e6;
 }
@@ -701,7 +694,11 @@ background-color: #f2f2f2;
   line-height: 28px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.hotel-card-image {
+  display: block;
 }
 
 .button-favourites {
