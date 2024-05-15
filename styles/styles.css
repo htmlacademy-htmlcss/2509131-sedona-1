@@ -791,6 +791,23 @@ background-color: #f2f2f2;
   margin: 0;
   padding: 0;
   margin-bottom: 36px;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  background-image: url("../images/icons/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 20px;
+  background-position: center center;
+  width: 7px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  left: 33px;
+  bottom: 0;
 }
 
 .breadcrumbs-link {
@@ -803,10 +820,19 @@ background-color: #f2f2f2;
   margin-right: 28px;
   padding: 12px;
   display: block;
-  background-image: url("../images/icons/main-page-icon.svg"), url("../images/icons/right-arrow.svg");
+  background-image: url("../images/icons/main-page-icon.svg");
+  background-size: 13px 15px;
   background-repeat: no-repeat;
-  background-position: ;
- }
+  background-position: center 3px;
+}
+
+.breadcrumbs-current:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-current:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .hotels-filter {
   display: flex;
