@@ -956,6 +956,43 @@ background-color: #f2f2f2;
   margin-bottom: 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  top: 2px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.control:hover .control-mark,
+.control:hover .control-label {
+  opacity: 60%;
+}
+
+.control:focus .control-mark {
+  outline: 3px solid #83b3d3;
+}
+
+.control-input:disabled + .control-mark
+.control:hover .control-label {
+  opacity: 30%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/icons/checked.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 10px;
+  background-position: center;
+}
+
 .price-input {
   font-size: 18px;
   line-height: 23px;
