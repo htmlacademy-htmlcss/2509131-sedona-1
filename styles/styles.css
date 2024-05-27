@@ -255,11 +255,11 @@ body {
   padding: 20px 16px;
 }
 
-.navigation-link:hover {
+.navigation-link:not(.want-here):hover {
   color: #756157;
 }
 
-.navigation-link:focus {
+.navigation-link:not(.want-here):active {
   color: #756157;
   outline: none;
 }
@@ -343,11 +343,6 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   display: block;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
 }
 
 .want-here:hover {
@@ -965,18 +960,24 @@ background-color: #f2f2f2;
   font-size: 18px;
   line-height: 23px;
   font-weight: 700;
-  width: 143px;
   margin: 0;
   padding: 12px 20px;
   box-sizing: border-box;
+  border: none;
+  display: flex;
 }
 
 .price-input-min {
   border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+  width: 143px;
+  height: 48px;
 }
 
 .price-input-max {
   border-radius: 0 4px 4px 0;
+  width: 143px;
+  height: 48px;
 }
 
 .price-label {
@@ -987,6 +988,42 @@ background-color: #f2f2f2;
   min-height: 48px;
   margin: 0;
   padding: 0;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 44px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
 }
 
 .buttons-container {
