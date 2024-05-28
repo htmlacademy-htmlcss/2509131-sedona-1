@@ -977,11 +977,11 @@ background-color: #f2f2f2;
   opacity: 60%;
 }
 
-.control:focus .control-mark {
-  outline: 3px solid #83b3d3;
+.control-input:focus + .control-mark {
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
-.control-input:disabled + .control-mark
+.control-input:disabled .control-mark
 .control:hover .control-label {
   opacity: 30%;
 }
@@ -991,6 +991,52 @@ background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-size: 12px 10px;
   background-position: center;
+}
+
+.control-radio {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-radio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.control-label-radio {
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.control-input[type="radio"]:checked + .control-label-radio::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5.5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+}
+
+.control-radio:hover {
+  opacity: 60%;
+}
+
+.control-radio:disabled {
+  opacity: 30%;
+}
+
+.control-radio:focus + .control-radio::before {
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .price-input {
@@ -1003,6 +1049,22 @@ background-color: #f2f2f2;
   border: none;
   display: flex;
 }
+
+.price-input:hover {
+  background-color: #e6e6e6;
+}
+
+.price-input:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.price-input:active {
+  box-shadow: 0 0 0 3px #000000;
+  outline: none;
+}
+
 
 .price-input-min {
   border-radius: 4px 0 0 4px;
@@ -1052,6 +1114,11 @@ background-color: #f2f2f2;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+
+.range-toggle:focus,
+.range-toggle:active {
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .toggle-min {
