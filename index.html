@@ -154,5 +154,38 @@
         </section>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group check-in-out">
+              <label class="check check-in" for="check-in-date">Дата Заезда:</label>
+              <input class="check-in-field field" type="text" id="check-in-date" name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020">
+            </p>
+            <p class="field-group check-in-out">
+              <label class="check check-out" for="check-out-date">Дата Выезда:</label>
+              <input class="check-out-field field" type="text" id="check-out-date" name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023">
+            </p>
+            <p class="field-group number">
+              <label class="adults" for="adults">Взрослые:</label>
+              <button class="minus" type="button">-</button>
+              <input class="field adults-field" type="number" id="adults" name="adults-number" placeholder="2">
+              <button class="plus" type="button">+</button>
+            </p>
+            <p class="field-group number">
+              <label class="children" for="children">Дети:</label>
+              <button class="minus" type="button">-</button>
+              <input class="field children-field" type="number" id="children" name="children-number" placeholder="2">
+              <button class="plus" type="button">+</button>
+            </p>
+            <button class="search-button button button-light" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>

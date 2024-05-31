@@ -92,6 +92,7 @@ body {
 
 .button-light:active {
   background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .button-light:disabled {
@@ -119,6 +120,7 @@ body {
 
 .button-light-catalog:active {
   background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .button-light-catalog:disabled {
@@ -142,6 +144,7 @@ body {
 
 .button-dark:active {
   background-color: #756157;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .button-dark:disabled {
@@ -170,6 +173,7 @@ body {
 
 .button-dark-catalog:active {
   background-color: #756157;
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .button-dark-catalog:disabled {
@@ -1020,7 +1024,7 @@ background-color: #f2f2f2;
   content: "";
   position: absolute;
   top: 5px;
-  left: 5.5px;
+  left: 5px;
   width: 10px;
   height: 10px;
   background-color: #3f5e72;
@@ -1031,7 +1035,7 @@ background-color: #f2f2f2;
   opacity: 60%;
 }
 
-.control-radio:disabled {
+.control-radio:active {
   opacity: 30%;
 }
 
@@ -1064,7 +1068,6 @@ background-color: #f2f2f2;
   box-shadow: 0 0 0 3px #000000;
   outline: none;
 }
-
 
 .price-input-min {
   border-radius: 4px 0 0 4px;
@@ -1428,4 +1431,142 @@ background-color: #f2f2f2;
   min-height: 60px;
   align-items: center;
   padding: 16px 22px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 2;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+}
+
+.modal-search {
+  width: 717px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-button::before {
+  content: "";
+  background-image: url("../images/icons/close.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 19px;
+  right: 19.5px;
+  width: 14px;
+  height: 14px;
+}
+
+.modal-close-button:hover,
+.modal-close-button:active {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.modal-close-button:active::before {
+  opacity: 30%;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.field {
+  margin: 0;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  border: none;
+}
+
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.field:focus {
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
+.field:not(:placeholder-shown) {
+  border: 2px solid #000000;
+  box-shadow: none;
+}
+
+.field:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.field::placeholder {
+  color: #000000;
+  opacity: 60%;
+}
+
+.search-button {
+  line-height: 24px;
+  width: 577px;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.check, .adults, .children {
+  font-weight: 700;
+}
+
+.check-in-field, .check-out-field {
+  width: 440px;
+  grid-column: 1 / -1;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 247px 242px;
+  gap: 48px 88px;
+}
+
+.number {
+  display: flex;
+}
+
+.adults-field, .children-field {
+  width: 31px;
+  display: block;
+}
+
+.check-in-out {
+  grid-column: 1 / -1;
+  justify-content: space-between;
 }
