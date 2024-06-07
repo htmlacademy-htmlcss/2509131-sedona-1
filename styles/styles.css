@@ -1508,6 +1508,11 @@ background-color: #f2f2f2;
 }
 
 .modal-close-button:hover,
+.modal-close-button:focus,
+.modal-close-button:active {
+  background-color: #e6e6e6;
+}
+
 .modal-close-button:active {
   background-color: #e6e6e6;
 }
@@ -1667,20 +1672,27 @@ background-color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .minus-plus:hover {
+  color: #000000;
+}
 
+.minus-plus:focus + .minus-plus-icon {
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.minus-plus:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .minus {
   border-radius: 4px 0 0 4px;
-  color: rgba(117, 97, 87, 0.3);
 }
 
 .plus {
   border-radius: 0 4px 4px 0;
-  color: rgba(117, 97, 87, 0.3);
 }
 
 .date-text {
@@ -1710,10 +1722,6 @@ background-color: #f2f2f2;
 .modal-container-close {
   display: none;
 }
-
-/*.children-tooltip {
-  position: relative;
-}*/
 
 .children {
   position: relative;
