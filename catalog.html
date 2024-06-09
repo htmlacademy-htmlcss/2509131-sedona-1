@@ -8,7 +8,7 @@
   <body>
     <div class="container">
     <header class="catalog-header">
-      <div class="logo">
+      <div class="logo-inner">
         <a class="logo-link" href="index.html">
           <img class="logo" src="images/logo.svg" alt="Логотип компании City of Sedona." width="140" height="70">
         </a>
@@ -45,85 +45,102 @@
     </header>
     <main class="main-container main-inner">
       <div class="background-container">
-      <h1 class="inner-header-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-item">
-          <a class="home-button" href="index.html">
-            <span class="visually-hidden">Главная</span>
-          </a>
-        </li>
-        <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link breadcrumbs-current">Гостиницы</a>
-        </li>
-      </ul>
-      <section class="catalog-filter">
-        <h2 class="visually-hidden">Фильтры для подбора гостиницы</h2>
-        <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="hotels-filter-group hotels-filter-group-infrastructure">
-            <legend class="hotels-filter-title">Инфраструктура:</legend>
-            <ul class="list hotels-filter-list">
-              <li class="hotels-filter-item">
-                <label class="control-label">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="swimming-pool" checked>Бассейн
-                </label>
-              </li>
-              <li class="hotels-filter-item">
-                <label class="control-label">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>
-                  Парковка
-                </label>
-              </li>
-              <li class="hotels-filter-item">
-                <label class="control-label">
-                  <input class="control-input" type="checkbox" name="infrastructure" value="Wi-Fi">
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="hotels-filter-group hotels-filter-group-living">
-            <legend class="hotels-filter-title">Тип Жилья:</legend>
-            <ul class="list hotels-filter-list">
-              <li class="hotels-filter-item">
-                <label class="control-label">
-                  <input class="control-input" type="radio" name="living-type" value="hotel" checked>Гостиница
-                </label>
-              </li>
-              <li class="hotels-filter-item">
-                <label class="control-label">
-                  <input class="control-input" type="radio" name="living-type" value="motel">Мотель
-                </label>
-              </li>
-              <li class="hotels-filter-item">
-                <label class="control-label">
-                  <input class="control-input" type="radio" name="living-type" value="apartments">Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="hotels-filter-group hotels-filter-group-price">
-            <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-              <label class="price-label">
-                <input class="price-input price-input-min" type="number" name="min-price" placeholder="от" value="0">
-              </label>
-              <label class="price-label">
-                <input class="price-input price-input-max" type="number" name="max-price" placeholder="до" value="9000">
-              </label>
-              <button class="toggle-min" type="button">
-                <span class="visually-hidden">Изменить мин цену</span>
-              </button>
-              <button class="toggle-max" type="button">
-                <span class="visually-hidden">Изменить макс цену</span>
-              </button>
-          </fieldset>
-          <div class="buttons-container">
-            <button class="button button-light-catalog submit-button" type="submit">Применить</button>
-            <button class="button button-transparent" type="reset">Сбросить</button>
-          </div>
-        </form>
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="home-button" href="index.html">
+              <span class="visually-hidden">Главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link breadcrumbs-current">Гостиницы</a>
+          </li>
+        </ul>
+        <section class="catalog-filter">
+          <h2 class="visually-hidden">Фильтры для подбора гостиницы</h2>
+          <form class="hotels-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="hotels-filter-group hotels-filter-group-infrastructure">
+              <legend class="hotels-filter-title">Инфраструктура:</legend>
+              <ul class="list hotels-filter-list">
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="swimming-pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="infrastructure" value="Wi-Fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="hotels-filter-group hotels-filter-group-living">
+              <legend class="hotels-filter-title">Тип Жилья:</legend>
+              <ul class="list hotels-filter-list">
+                <li class="hotels-filter-item">
+                  <label class="control-radio">
+                    <input class="visually-hidden control-input" type="radio" name="living-type" value="hotel" checked>Гостиница
+                    <span class="control-label-radio"></span>
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control-radio">
+                    <input class="visually-hidden control-input" type="radio" name="living-type" value="motel">Мотель
+                    <span class="control-label-radio"></span>
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control-radio">
+                    <input class="visually-hidden control-input" type="radio" name="living-type" value="apartments">Апартаменты
+                    <span class="control-label-radio"></span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="hotels-filter-group hotels-filter-group-price">
+              <legend class="hotels-filter-title">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="price-label">
+                      <input class="price-input price-input-min" type="number" name="min-price" placeholder="от" value="0">
+                      <span>от</span>
+                    </label>
+                    <label class="price-label">
+                      <input class="price-input price-input-max" type="number" name="max-price" placeholder="до" value="9000">
+                      <span>до</span>
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </fieldset>
+            <div class="buttons-container">
+              <button class="button button-light-catalog submit-button" type="submit">Применить</button>
+              <button class="button button-transparent" type="reset">Сбросить</button>
+            </div>
+          </form>
+        </section>
       </div>
-      </section>
-      <section class="sorting-results">
+        <section class="sorting-results">
         <div class="sorting-results-container">
           <h2 class="sorting-results-title">Найдено гостиниц:
             <span class="sorting-results-count">38</span>
@@ -224,7 +241,6 @@
           </li>
           <li class="pagination-item pagination-dots">
             <span class="dots">...</span>
-
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -235,7 +251,7 @@
     <footer class="page-footer">
       <section class="footer-subscribe">
         <h2 class="footer-subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="footer-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="footer-subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="footer-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="field field-inner" type="email" name="footer-subscribe-email" placeholder="Ваш e-mail" required>
           <button class="button footer-subscribe-button button-light" type="submit">Подписаться</button>
