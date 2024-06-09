@@ -50,7 +50,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 15 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   flex-grow: 1;
   background-color: #ffffff;
 }
@@ -694,6 +694,7 @@ body {
 input[type=email] {
   font-size: 18px;
   line-height: 24px;
+  font-weight: 400;
   font-family: inherit;
 }
 
@@ -739,6 +740,8 @@ input[type=email] {
 .field-inner {
   background-color: #f2f2f2;
   width: 684px;
+  padding-top: 20px;
+  font-weight: 400;
 }
 
 .footer-contacts {
@@ -1292,7 +1295,8 @@ input[type=email] {
   background-repeat: no-repeat;
   background-position: right 20px center;
   padding-right: 40px;
-  font-size: 16px;
+  font-family: inherit;
+  font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
@@ -1412,7 +1416,7 @@ input[type=email] {
 }
 
 .product-three-stars {
-  width: 70px;
+  width: 68px;
 }
 
 .product-two-stars {
@@ -1495,8 +1499,8 @@ input[type=email] {
 
 .dots {
   display: block;
-  min-width: 60px;
-  min-height: 60px;
+  width: 60px;
+  height: 60px;
   align-items: center;
   padding: 17px 22px;
   font-weight: 400;
