@@ -19,11 +19,11 @@ html {
 }
 
 body {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color:  #f2f2f2;
-  color: #000;
+  color: #000000;
   margin: 0;
   min-width: 1280px;
 }
@@ -58,7 +58,7 @@ img {
   flex-direction: column;
   box-shadow: 0 0 15px 0 rgba(0 0 0 / 20%);
   flex-grow: 1;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .main-container {
@@ -73,7 +73,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   padding: 12px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -264,8 +264,8 @@ img {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
   text-decoration: none;
   flex-wrap: wrap;
   padding: 20px 15.5px;
@@ -346,7 +346,7 @@ img {
   line-height: 10px;
   text-align: center;
   background-color: #7db54f;
-  color: #fff;
+  color: #ffffff;
   border-radius: 10px;
   padding: 3px;
   min-height: 20px;
@@ -360,7 +360,7 @@ img {
 
 .want-here {
   background-color: #756157;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   padding: 12px;
   padding-top: 8px;
@@ -469,8 +469,8 @@ img {
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 25px;
-  width: 620px;
   margin-top: 69px;
+  min-width: 620px;
 }
 
 .advantages-main-title-description {
@@ -510,7 +510,7 @@ img {
 
 .advantages-item {
   background-color: rgba(131 179 211 / 12%);
-  color: #000;
+  color: #000000;
 }
 
 .advantages-title::after {
@@ -530,12 +530,12 @@ img {
 .advantages-item-dark {
   width: 100%;
   background-color: #82b3d3;
-  color: #fff;
+  color: #ffffff;
   display: flex;
 }
 
 .advantages-item-dark .advantages-title {
-  color: #fff;
+  color: #ffffff;
 }
 
 .advantages-item-dark .advantages-title::after {
@@ -549,13 +549,14 @@ img {
 }
 
 .advantages-description {
-  color: #333;
-  margin: 0;
+  color: #333333;
+  margin: 0 auto;
   padding-bottom: 100px;
+  min-width: 232px;
 }
 
 .advantages-item-dark .advantages-description {
-  color: #fff;
+  color: #ffffff;
 }
 
 .advantages-image {
@@ -625,7 +626,7 @@ img {
 }
 
 .services-item-light {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .house-icon {
@@ -714,8 +715,8 @@ input[type="email"] {
 .footer-subscribe {
   display: block;
   width: 1200px;
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
   text-align: center;
   margin: 0 auto;
   padding: 91px 258px 104px;
@@ -727,7 +728,7 @@ input[type="email"] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: #ffffff;
   padding: 96px 258px 104px;
 }
 
@@ -768,12 +769,12 @@ input[type="email"] {
 }
 
 .field:focus:not(:placeholder-shown) {
-  border: 2px solid #000;
+  border: 2px solid #000000;
   box-shadow: none;
 }
 
 .field::placeholder {
-  color: #000;
+  color: #000000;
   opacity: 0.6;
 }
 
@@ -817,7 +818,7 @@ input[type="email"] {
 
 .footer-contacts-social-button {
   color: #82b3d3;
-  background-color: #fff;
+  background-color: #ffffff;
   display: block;
   padding: 12px;
   padding-top: 10px;
@@ -855,7 +856,7 @@ input[type="email"] {
   text-align: center;
   text-decoration: none;
   font-style: normal;
-  color: #000;
+  color: #000000;
   display: block;
 }
 
@@ -877,7 +878,7 @@ input[type="email"] {
   align-items: center;
   padding: 0;
   margin: 0;
-  color: #000;
+  color: #000000;
 }
 
 .htmlacademy-link:hover {
@@ -908,7 +909,7 @@ input[type="email"] {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   margin: 0;
   margin-bottom: 8px;
 }
@@ -919,7 +920,7 @@ input[type="email"] {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #696563;
-  color: #fff;
+  color: #ffffff;
   margin: 0;
   padding: 35px 70px 40px;
 }
@@ -1040,7 +1041,7 @@ input[type="email"] {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   margin: 0;
   margin-bottom: 33px;
   padding: 0;
@@ -1067,7 +1068,7 @@ input[type="email"] {
   border-radius: 4px;
   top: 2px;
   left: 0;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .control:hover {
@@ -1106,7 +1107,7 @@ input[type="email"] {
   left: 2px;
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1171,7 +1172,7 @@ input[type="number"] {
 }
 
 .price-input:active {
-  box-shadow: 0 0 0 3px #000;
+  box-shadow: 0 0 0 3px #000000;
   outline: none;
 }
 
@@ -1180,7 +1181,7 @@ input[type="number"] {
 }
 
 .price-input:focus:not(:placeholder-shown) {
-  border: 2px solid #000;
+  border: 2px solid #000000;
   box-shadow: none;
 }
 
@@ -1200,7 +1201,7 @@ input[type="number"] {
 .price-label {
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
   min-width: 143px;
   min-height: 48px;
   margin: 0;
@@ -1222,7 +1223,7 @@ input[type="number"] {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .range-toggle {
@@ -1274,7 +1275,7 @@ input[type="number"] {
 }
 
 .sorting-results {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0;
   padding: 50px 70px 60px;
 }
@@ -1290,7 +1291,7 @@ input[type="number"] {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   margin: 0;
   margin-right: 200px;
@@ -1302,7 +1303,7 @@ input[type="number"] {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   margin: 0;
   display: block;
@@ -1343,7 +1344,7 @@ input[type="number"] {
 }
 
 .show-cards-current {
-  border: 2px solid #000;
+  border: 2px solid #000000;
 }
 
 .show-cards-item {
@@ -1355,7 +1356,7 @@ input[type="number"] {
 }
 
 .show-cards-button:hover {
-  border-color: #000;
+  border-color: #000000;
 }
 
 .show-cards-button:focus {
@@ -1364,7 +1365,7 @@ input[type="number"] {
 }
 
 .show-cards-button:active {
-  border-color: #000;
+  border-color: #000000;
 }
 
 .select-control {
@@ -1383,7 +1384,7 @@ input[type="number"] {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .select-control:hover {
@@ -1404,7 +1405,7 @@ input[type="number"] {
 }
 
 .select-control:focus:not(:placeholder-shown) {
-  border: 2px solid #000;
+  border: 2px solid #000000;
   box-shadow: none;
 }
 
@@ -1428,7 +1429,7 @@ input[type="number"] {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 4px;
   box-shadow: 0 0 0 1px #e6e6e6;
@@ -1549,7 +1550,7 @@ input[type="number"] {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
   padding: 11px;
@@ -1578,7 +1579,7 @@ input[type="number"] {
 }
 
 .pagination-current {
-  color: #000;
+  color: #000000;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 4px;
@@ -1589,19 +1590,19 @@ input[type="number"] {
 }
 
 .pagination-current:hover {
-  color: #000;
+  color: #000000;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
 }
 
 .pagination-current:focus {
-  color: #000;
+  color: #000000;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
 }
 
 .pagination-current:active {
-  color: #000;
+  color: #000000;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
 }
@@ -1632,7 +1633,7 @@ input[type="number"] {
   position: relative;
   margin: auto;
   padding: 64px 70px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .modal-search {
@@ -1743,7 +1744,7 @@ input[type="number"] {
   background-color: #f2f2f2;
   border: none;
   outline: none;
-  color: #000;
+  color: #000000;
   border-radius: 0;
 }
 
@@ -1807,7 +1808,7 @@ input[type="number"] {
 }
 
 .minus-plus:hover {
-  color: #000;
+  color: #000000;
 }
 
 .minus-plus:focus {
@@ -1909,8 +1910,9 @@ input[type="number"] {
 .tooltip-text {
   position: absolute;
   background-color: #333;
-  color: #fff;
+  color: #ffffff;
   width: 256px;
+  min-height: 143px;
   font-size: 16px;
   line-height: 20px;
   padding: 15px 18px 18px 22px;
