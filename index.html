@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
@@ -28,12 +29,12 @@
           <ul class="list navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-link search-icon" href="#">
-                <span class="visually-hidden">Поиск</span>
+                <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link heart-icon" href="#">
-                <span class="visually-hidden">Избранное</span>
+                <span class="visually-hidden">Избранное.</span>
                 <span class="favourites-count">12</span>
               </a>
             </li>
@@ -44,9 +45,9 @@
         </nav>
       </header>
       <main class="main-container main-index">
-        <h1 class="visually-hidden">Город-курорт Седона</h1>
+        <h1 class="visually-hidden">Город-курорт Седона.</h1>
         <section class="hero">
-          <h2 class="visually-hidden">Горы - главная достопримечательность Седоны</h2>
+          <h2 class="visually-hidden">Горы - главная достопримечательность Седоны.</h2>
           <img class="hero-img-banner" src="images/mountains.jpg" alt="Горы возле Седоны." width="1200" height="485">
           <img class="hero-img" src="images/welcome.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks." width="458" height="352">
         </section>
@@ -108,7 +109,7 @@
           </ul>
         </section>
         <section class="hotel-search">
-          <h2 class="visually-hidden">Поиск гостиницы</h2>
+          <h2 class="visually-hidden">Поиск гостиницы.</h2>
           <p class="hotel-search-title">Заинтересовались?</p>
           <p class="hotel-search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button button-dark hotel-search-button" href="#">Поиск гостиницы в Седоне</a>
@@ -119,12 +120,13 @@
           <h2 class="footer-subscribe-title">Подпишитесь на рассылку</h2>
           <p class="footer-subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="footer-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="footer-field" type="email" name="footer-subscribe-email" placeholder="Ваш e-mail" required>
+            <label class="visually-hidden" for="newsletter-email">Email.</label>
+            <input class="footer-field field" type="email" name="footer-subscribe-email" id="newsletter-email" placeholder="Ваш e-mail" required>
             <button class="footer-subscribe-button button button-light" type="submit">Подписаться</button>
           </form>
         </section>
         <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+          <h2 class="visually-hidden">Контакты.</h2>
             <ul class="list footer-contacts-social-list">
               <li class="footer-contacts-social-item">
                 <a class="footer-contacts-social-button" href="https://vk.com/htmlacademy">
@@ -157,7 +159,7 @@
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
