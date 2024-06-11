@@ -48,7 +48,6 @@
         <h1 class="visually-hidden">Город-курорт Седона.</h1>
         <section class="hero">
           <h2 class="visually-hidden">Горы - главная достопримечательность Седоны.</h2>
-          <img class="hero-img-banner" src="images/mountains.jpg" alt="Горы возле Седоны." width="1200" height="485">
           <img class="hero-img" src="images/welcome.svg" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks." width="458" height="352">
         </section>
         <section class="advantages">
@@ -165,12 +164,12 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group check-in-out">
               <label class="check check-in" for="check-in-date">Дата Заезда:</label>
-              <input class="check-in-field field" type="text" id="check-in-date" name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020">
+              <input class="check-in-field field" type="text" id="check-in-date" name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020" required>
               <span class="date-text date-text-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group check-in-out">
               <label class="check check-out" for="check-out-date">Дата Выезда:</label>
-              <input class="check-out-field field" type="text" id="check-out-date" name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023">
+              <input class="check-out-field field" type="text" id="check-out-date" name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023" required>
               <span class="date-text">На эти даты есть свободные номера. Пока есть.</span>
             </p>
             <div class="number-wrap">
@@ -182,16 +181,15 @@
                   <button class="minus-plus plus" type="button"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" fill="currentColor"/></svg></button>
                 </div>
               </div>
-
               <div class="children-wrap">
                 <span class="children-tooltip">
-                    <label class="children" for="children">Дети:</label>
-                    <span class="tooltip">
-                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/></svg>
-                      </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                    </span>
+                  <label class="children" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/></svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
                 </span>
                 <div class="button-wrap">
                   <button class="minus-plus minus" type="button"><svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 9v2h14V9H3Z" fill="currentColor"/></svg></button>
@@ -200,7 +198,6 @@
                 </div>
               </div>
             </div>
-
             <button class="search-button button button-light" type="submit">Найти</button>
           </form>
         </section>

@@ -418,6 +418,10 @@ img {
 /* HERO */
 
 .hero {
+  background-image: url("../images/mountains.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #7ea2c2;
   padding: 51px 70px 82px;
   position: relative;
@@ -1127,6 +1131,10 @@ input[type="email"] {
   content: "";
 }
 
+.control-input[type="radio"]:disabled + .control-label-radio {
+  opacity: 0.1;
+}
+
 .control-radio:hover {
   opacity: 0.6;
 }
@@ -1137,6 +1145,10 @@ input[type="email"] {
 
 .control-radio:focus + .control-radio::before {
   box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.control-radio:disabled {
+  opacity: 0.1;
 }
 
 .price-input {
@@ -1622,11 +1634,15 @@ input[type="number"] {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242 242 242 / 80%);
   z-index: 2;
+  display: none;
+}
+
+.modal-container-active {
+  display: flex;
 }
 
 .modal {
@@ -1873,10 +1889,6 @@ input[type="number"] {
 
 .date-text-error {
   color: #ff5757;
-}
-
-.modal-container-close {
-  display: none;
 }
 
 .children-tooltip {
